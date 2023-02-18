@@ -1,3 +1,57 @@
-/*
-  Aquí van los estilos
-*/
+*{
+  box-sizing: border-box;
+  font-family:Arial;
+  padding:0px;
+  margin:0px;
+  
+  }
+  header {
+  text-align:center;
+  background:#339cbf; /*#000;*/
+  color:#fff;
+  padding:30px;
+  }
+  .container {
+  max-width:700px;
+  margin:auto;
+  padding:20px;
+  }
+  section {
+  border:2px solid #5624d0;
+  border-radius:7px;
+  padding:10px;
+  margin:10px 0;
+  }
+  label {
+  display:block;
+  border-radius:7px;
+  padding:7px;
+  cursor:pointer;
+  border: 1px dashed #ccc;
+  margin-bottom:3px;
+  }
+  label:hover {
+  background:#cec0fc;
+  }
+  button{
+  width:100%;
+  color: #fff;
+  display:block;
+  margin:auto;
+  padding:10px;
+  background-color:#2C3E50;
+  border:none;
+  cursor:pointer;
+  border-radius:20px;
+  }
+  button:hover {
+  background:#857AE1;
+  color:#000;
+  }
+  h2 {
+  text-align:left;
+  }
+  #resultado {
+  font-size:30px;
+  color:#212F3D;
+  } 

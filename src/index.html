@@ -1,13 +1,69 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
     <title>Trivia</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js"></script>
-  </body>
+
+</head>
+<body>
+   <header>
+    <h1>Trivia! Edición ciencias</h1> <br>
+    <p>Juego de preguntas</p>
+</header>
+
+        <div class="container"> 
+            <section id="p0">
+                
+                <p>¿Cuál es el número atómico del Oxigeno?</p>
+                <label>
+                    <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">N-8
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">N-5
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">N-1
+                </label>
+            </section>
+            <section id="p1">
+                
+                <p>¿Con qué objeto descubrió Benjamin Franklin la electricidad?</p>
+                <label>
+                    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Una antena
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Una cometa
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Un tenedor
+                </label>
+            </section>
+
+            <section id="p2">
+                
+                <p>¿Quién es el cientifico más importante del siglo XX?</p>
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Isaac Newton
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Albert Einstein
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Galileo Galilei
+                </label>
+            </section>
+
+            
+    <button onclick="MostrarResultado()">Mostrar Resultado</button>
+    <h2>Acertaste: <span id="resultado"></span></h2>
+
+        </div>
+
+<script src="main.js"></script>
+     
+</body>
+
 </html>
